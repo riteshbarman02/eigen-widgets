@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import { Container } from '@mui/material';
+import CardList from './components/CardList';
+import './App.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      
+     <div className='text'>
+        <div><h1>Eigenplus Webapps</h1></div>
+     </div>
+      <div className='container2'><CardList /></div>
+      
+    </Container>
   );
 }
 
